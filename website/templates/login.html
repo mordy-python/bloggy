@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Login to Bloggy{% endblock title %}
+{% block content %}
+<form method="POST">
+    <h3 align="center">Login</h3>
+    <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" class="form-control" placeholder="Enter Email">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" class="form-control" placeholder="Enter Password">
+        <br>
+        <div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </div>
+    </div>
+</form>
+{% endblock content %}
